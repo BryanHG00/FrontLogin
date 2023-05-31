@@ -23,7 +23,8 @@ function App() {
   };
 
   return (
-
+    <>
+    
     <BrowserRouter>
     {
       user.id!==0 ? (
@@ -38,7 +39,7 @@ function App() {
     }
 
       <Routes>
-        <Route index element={<Login login={login} />} />
+        <Route index element={<Login login={login} user={user}/>} />
         
         <Route path="/home" element={
           <ProtectedRoute user={user}>
@@ -57,6 +58,7 @@ function App() {
         } />
       </Routes>
     </BrowserRouter>
+    </>
   )
 }
 
