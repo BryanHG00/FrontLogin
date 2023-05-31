@@ -1,0 +1,380 @@
+:root{
+    --fondo: rgba(26, 100, 54, 0.486);
+}
+
+*{
+    font-family: "century gothic", "arial";
+}
+
+html{
+    background-image: url('../src/imgs/fondo4k.jpg');
+    background-size:cover;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+    color: rgb(255, 238, 2);
+    margin: 0;
+}
+
+.titulo{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0.3rem 3rem;
+    background-color: rgba(26, 100, 54, 0.486);
+    backdrop-filter: blur(5px);
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+.container-empleados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscar{
+    font-size: 1rem;
+    margin: 0.2rem;
+    display: flex;
+    width: 280px;
+    height: 35px;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.container-menu{
+    border-radius: 0.75rem;
+    margin: 0.5rem;
+    width: 80%;
+    height: 420px;
+    background-color: rgba(26, 100, 54, 0.514);
+    backdrop-filter: blur(4px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.btnM{
+    background-color: white;
+    text-decoration: none;
+    color: rgb(26, 100, 54);
+    font-size: 2rem;
+    height: 350px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 1.75rem;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.btnM img{
+    width:140px;
+    margin-bottom: 1rem;
+}
+
+.btnM:hover{
+    border: 5px solid white;
+    color: white;
+    background-color: rgba(24, 75, 43, 0.87);
+    transition: ease-in background-color 0.25s;
+}
+
+.navISE{
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.425);
+    /* -webkit-backdrop-filter: blur(5px); */
+    backdrop-filter: blur(5px);
+    height: 120px;
+    justify-content: space-between;
+}
+
+.navISE-I{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+}
+/*Los siguientes son los enlaces dentro de .navISE-I*/
+
+.homebtn{
+    margin: 0.5rem;
+    padding: 0 1rem;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.2rem;
+    color: white;
+    width: auto;
+    background-color: rgb(46, 119, 91);
+    text-align: center;
+    border-radius: 0.75rem;
+    height: 40px;
+}
+
+.homebtn:hover{
+    background-color: rgb(30, 150, 104);
+}
+
+/* Fin de enlaces */
+
+.homelogo{
+    display: flex;
+    width:fit-content;
+    height: fit-content;
+}
+
+.navISE-D{
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.navISE-D h2{
+    margin: 0;
+    padding: 0;
+}
+
+.navISE-D button{
+    color: white;
+    width: 150px;
+    border-radius: 0.75rem;
+    border: none;
+    background-color: rgb(179, 8, 8);
+    margin: 0.5rem auto;
+    height: 40px;
+}
+
+.navISE-D button:hover{
+    cursor: pointer;
+    background-color: rgb(204, 2, 2);
+}
+
+.nEmployee{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 0 5rem;
+    width: fit-content;
+    height: 350px;
+    background-color: rgba(26, 100, 54, 0.911);
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nEmployee select{
+    font-size: 1.2rem;
+    width: 300px;
+    border-radius: 0.25rem;
+}
+
+.nEmployee select option{
+    background-color: white;
+    text-align: center;
+}
+
+.opt:hover{
+    background-color: green;
+}
+
+.nEmployee input{
+    text-align: center;
+    font-size: 1.2rem;
+    width: 300px;
+    height: auto;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.nEmployee input:hover{
+    border: 1px solid black;
+}
+
+.nEmployee button{
+    background-color: white;
+    font-size: 1.5rem;
+    margin: 1rem;
+    width: 150px;
+    height: 50px;
+    border-radius: 1rem;
+    border: none;
+}
+
+.nEmployee button:hover{
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+    background-color: rgb(20, 145, 68);
+    transition: ease background-color 0.4s;
+}
+/* página allemployees*/
+.container-tEmpleados{
+    display: flex;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 0 5rem;
+    height: 350px;
+    background-color: rgba(26, 100, 54, 0.911);
+}
+
+.container-tEmpleados table{
+    height: fit-content;
+    color: white;
+    /* border: 1px solid white; */
+    font-size: 1.4rem;
+}
+
+.container-tEmpleados table tr td{
+    padding: 0 1rem;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+/* botones editar / eliminar */
+.editar{
+    margin: 0 0.25rem;
+    background-color: yellow;
+    color: black;
+}
+
+.eliminar{
+    margin: 0 0.25rem;
+    background-color: white;
+    color: rgb(27, 27, 27);
+}
+
+.formIS{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    padding: 0 5rem;
+    height:  250px;
+    width: fit-content;
+    background-color: var(--fondo);
+    border-radius: 0.5rem;
+}
+
+.formIS input{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.25rem 0;
+}
+
+.formIS button{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+/* ------------------------------- */
+/* ---Sección pantallas medias--- */
+/* ------------------------------- */
+
+@media (max-width: 980px){
+    html{
+        background-size:200%;
+    }
+
+    .btnM{
+        height: 220px;
+        width: 250px;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0.5rem;
+    }
+}
+
+/* ------------------------------- */
+/* ---Sección pantallas pequeñas--- */
+/* ------------------------------- */
+
+@media (max-width: 620px){
+    html{
+        background-size:500%;
+    }
+
+    .container-menu{
+        height: 500px;
+        flex-direction: column;
+    }
+
+    .btnM{
+        height: 220px;
+        width: 250px;
+        margin: 1rem;
+    }
+
+    .navISE-I a{
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 50px;
+    }
+
+    .navISE-D{
+        margin: 0;
+    }
+
+    .nEmployee{
+        height: 350px;
+        width: auto;
+    }
+
+    .container-tEmpleados{
+        padding: 0;
+        display: flex;
+        width: auto;
+        margin: 1rem auto;
+        height: 420px;
+        background-color: rgba(26, 100, 54, 0.911);
+    }
+
+    .container-tEmpleados table{
+        color: white;
+        font-size: 1rem;
+    }
+
+    .container-tEmpleados table tr td{
+        padding: 0 0.5rem;
+        border: 1px solid white;
+    }
+
+    .actions{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+
+    .formIS{
+        width: auto;
+    }
+}
