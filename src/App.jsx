@@ -33,7 +33,7 @@ function App() {
         </>
       ):(
         <>
-          {console.log("Error al enviar")}
+          {}
         </>
       )
     }

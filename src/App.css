@@ -29,6 +29,7 @@ html{
     padding: 0.3rem 3rem;
     background-color: rgba(26, 100, 54, 0.486);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     width: fit-content;
     border-radius: 0.5rem;
 }
@@ -57,6 +58,7 @@ html{
     height: 420px;
     background-color: rgba(26, 100, 54, 0.514);
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     color: white;
     display: flex;
     align-items: center;
@@ -96,7 +98,7 @@ html{
     margin: 1rem auto;
     display: flex;
     background-color: rgba(128, 128, 128, 0.425);
-    /* -webkit-backdrop-filter: blur(5px); */
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     height: 120px;
     justify-content: space-between;
@@ -290,6 +292,13 @@ html{
     border: none;
 }
 
+
+.formIS button:hover{
+    cursor: pointer;
+    background-color: darkgreen;
+    color: white;
+    transition: ease background-color 0.4s;
+}
 /* ------------------------------- */
 /* ---Sección pantallas medias--- */
 /* ------------------------------- */
@@ -313,9 +322,9 @@ html{
 
 /* ------------------------------- */
 /* ---Sección pantallas pequeñas--- */
-/* ------------------------------- */
+/* ------------------------------- (max-width: 620px)*/
 
-@media (max-width: 620px){
+@media screen and (max-width: 620px){
     html{
         background-size:500%;
     }
@@ -375,6 +384,21 @@ html{
     }
 
     .formIS{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: auto;
+    }
+
+    .formIS input{
+        height: 2rem;
+        width: 300px;
+        border-radius: none;
+        font-size: 1rem;
+    }
+
+    .formIS button{
+        width: 160px;
+        height: 50px;
     }
 }
